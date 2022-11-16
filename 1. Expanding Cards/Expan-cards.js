@@ -1,3 +1,13 @@
+
+// 1. Expanding Cards
+
+// Important concepts for this project
+// 1. querySelectorAll()
+// 2. forEach() loop
+// 3. addEventListener "click"
+// 4. classList.add()
+// 5. classList.remove()
+
 const panels=document.querySelectorAll('.panel') 
 //without "All" querySelector select only first one
 
