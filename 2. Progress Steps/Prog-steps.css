@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+:root { /*variables*/
+   --line-border-fill: #3498db;
+   --line-border-empty: #e0e0e0;
+}
+
+body {
+    background-color: #f6f7fb;
+    font-family: 'Muli', sans-serif;
+    display: flex; /*flex for all-> numbers, line, circle and button*/
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    margin: 0;
+}
+
+.container { 
+    text-align: center; /*for prev and next*/
+}
+
+.progress-container { /*for number, line and circle*/
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+/**/
+.progress-container::before { /*for default empty progress line in GREY colour*/
+    content: ''; /*ALWAYS ADD THIS IN BEFORE SELECTOR*/
+    background-color: var(--line-border-empty);
+    /*absolute within progress container which is relative*/
+    position: absolute; 
+    /*positions from top and left*/
+    top: 50%; 
+    left: 0;
+    /*reposition vertically center*/
+    transform: translateY(-50%);
+    /*height and width of empty default line*/
+    height: 4px; 
+    width: 100%;
+    /*so that progress line is on behind the numbers*/
+    z-index: -1;
+}
+
+.progress { /*progress line in SOME BLUE colour*/
+    background-color: var(--line-border-fill);
+    /*absolute within progress container which is relative*/
+    position: absolute; 
+    /*positions from top and left*/
+    top: 50%; 
+    left: 0;
+    /*reposition vertically center*/
+    transform: translateY(-50%);
+    /*height and width of line*/
+    height: 4px; 
+    width: 0%; /*will change it through JS*/
+    /*so that progress line is on behind the numbers*/
+    z-index: -1;
+    transition: 0.6s ease;
+}
+
+.circle { /*all about circle in default*/
+    background-color: #fff;
+    color: #999;
+    /*for circle dimensions*/
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: 0.6s ease;
+}
+
+.circle.active { /*active circle*/
+    border-color: var(--line-border-fill);
+}
+
+/*BUTTONS*/
+.btn {
+    background-color: var(--line-border-fill);
+    color: #fff;
+    border:0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.btn:active { /*give button some push effect, shrink it down*/
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}

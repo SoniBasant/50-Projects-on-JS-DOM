@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> <!--includes meta data, link of stylesheet, title of the project-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Prog-steps.css">
+        <title>Progress Steps</title>
+    </head>
+    <body>
+        
+        <div class="container"> <!-- around everything -->
+            <div class="progress-container"> <!--for progress line and circle-->
+                <div class="progress" id="progress"></div><!--for progress line-->
+                <!--for circles-->
+                <div class="circle active">1</div> <!--make the first one active-->
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+                <div class="circle">4</div>
+            </div>
+
+            <!--buttons-->
+            <button class="btn" id="prev" disabled>Prev</button>
+            <!--previous button initially disabled, will change it with JS-->
+            <button class="btn" id="next">Next</button> <!--next button-->
+        
+        </div>
+
+        <script src="Prog-steps.js"></script> <!--JS link-->
+    </body>
+</html>
