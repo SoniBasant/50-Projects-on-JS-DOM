@@ -1,3 +1,14 @@
+
+// 2. Progress Steps
+
+// Important concepts
+// 1. addEventListener('click')
+// 2. querySelectorAll()
+// 3. forEach()
+// 4. getElementById()
+// 5. variable.disabled
+
+
 const progress = document.getElementById('progress')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
