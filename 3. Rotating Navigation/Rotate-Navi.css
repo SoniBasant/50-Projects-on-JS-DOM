@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding,
+    it doesn't affect the width of it. */
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #333;
+    color: #222; /*font color*/
+    overflow-x: hidden; /*hide overflow in x-axis*/
+    margin: 0;
+}
+
+/* container -> circle & content */
+
+.container {
+    background-color: #fafafa;
+    /* move from a position, here top left */
+    transform-origin: top left;
+    /* delay in a style, here transform */
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh; /*view port*/
+    padding: 50px;
+}
+
+.container.show-nav { 
+    /* rotate the container by 20deg from the origin */
+    transform: rotate(-20deg);
+}
+
+/* circle  */
+
+.circle-container {
+    /* fix the circle container to the point away from viewport */
+    /* we should fix it in front of eye when we are styling it */
+    position: fixed; /*fixed wrt viewport*/
+    top: -100px; /*can be 200px at the time of making*/
+    left: -100px; /*can be 200px at the time of making*/
+}
+
+.circle {
+    background-color: #ff7979;
+    /* circle's dimension */
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative; 
+    /*this is relative so the button inside it will be absolute*/
+    transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+    /* rotate the circle 160deg. This come from hit and trial */
+    transform: rotate(-160deg);
+}
+
+.circle button {
+    cursor: pointer;
+    position: absolute;
+    /*position relative to the nearest positioned ancestor*/
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+.circle button:focus {
+    /* outline is line drawn outside border */
+    outline: none;
+}
+
+/* style each button seperately */
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 20%;
+    left: 50%;
+    /* as close icon is going to move so to correct it, we rotate it  */
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+/* nav  */
+
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.4s;
+}
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+nav a {
+    color: #fafafa;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    color: #ff7979;
+    font-weight: bold;
+}
+
+/* content  */
+
+.content img {
+    max-width: 100%;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.content small {
+    color: #555;
+    font-style: italic;
+}
+
+.content p {
+    color: #333;
+    line-height: 1.5;
+}
+
