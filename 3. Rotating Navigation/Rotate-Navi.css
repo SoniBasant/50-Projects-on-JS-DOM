@@ -96,7 +96,7 @@ body {
 
 nav {
     position: fixed;
-    bottom: 40px;
+    bottom: 5px;
     left: 0;
     z-index: 1;
 }
@@ -109,14 +109,14 @@ nav ul {
 nav ul li {
     text-transform: uppercase;
     color: #fff;
-    margin: 40px 0;
+    margin: 30px 0;
     transform: translateX(-100%);
     transition: transform 0.4s ease-in;
 }
 
 nav ul li i {
     font-size: 20px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 nav ul li + li {
