@@ -1,0 +1,64 @@
+
+body {
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+}
+
+/* search widget */
+.search {
+    position: relative;
+    height: 50px;
+}
+
+/* input bar */
+.input {
+    background-color: #fff;
+    border: 0px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 0px;
+    top: 0px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+/* search button */
+.btn {
+    background-color: #fff;
+    color: darkgrey;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 52px;
+    width: 60px;
+    transition: transform 0.3s ease;
+    margin-right: 0px;
+}
+
+/* hover effect on the search button */
+.btn:hover {
+    color: lightslategray;
+}
+
+/* focus effect on button and input, remove outline */
+.btn:focus, .input:focus {
+    outline: none;
+}
+
+/* active effect on button and input*/
+.search.active .btn {
+    transform: translateX(220px);
+}
+
+.search.active .input {
+    width: 270px;
+}
