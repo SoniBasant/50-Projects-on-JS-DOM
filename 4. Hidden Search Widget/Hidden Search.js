@@ -1,4 +1,13 @@
 
+// 4. Hidden Search Widget
+
+// Important concepts for the project
+
+// 1. querySelector()
+// 2. addEventListener('click'
+// 3. element.classList.toggle('active')
+
+
 // variables
 const search = document.querySelector('.search');
 const input = document.querySelector('.input');
