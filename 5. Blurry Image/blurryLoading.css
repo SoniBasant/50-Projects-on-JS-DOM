@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    margin: 0px;
+    background-image: linear-gradient(to left, rgb(16, 2, 2), rgb(31, 2, 2)); 
+}
+ 
+.backG {
+    background: url(blurry_loading_5.jpg) no-repeat center center / contain;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    /* to make picture zoom-in */
+    height: calc(100vh + 60px);
+    width: calc(100vw + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}
