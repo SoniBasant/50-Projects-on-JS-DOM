@@ -36,8 +36,8 @@ checkBoxes()
 
 function checkBoxes(){
     // by decresing the size of the screen
-    // we removed the other(like 3rd box and below) from the screen
-    // so other box will come to trigger at some heigth from the screen
+    // we removed the other boxes(like 3rd box and below) from the screen
+    // so we get empty screen at below, box will come to trigger at some heigth from the screen
     // and not from the bottom of the screen so that we can see it coming
     const triggerBotton = window.innerHeight /5 *3;
     // loop through each boxes
