@@ -3,7 +3,15 @@
 
 // Important concepts for the project
 
-
+// 1. querySelector()
+// 2. addEventListener('mouseenter')
+// 3. addEventListener('mouseleave')
+// 4. classList.add()
+// 5. classList.remove()
+// 6. media query
+// 7. ::before Selector 
+// 8. @import for font 
+// 9. :root CSS pseudo-class
 
 // variables
 const left = document.querySelector('.left');
