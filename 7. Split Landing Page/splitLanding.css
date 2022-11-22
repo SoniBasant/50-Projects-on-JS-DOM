@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --left-bg-color: rgba(87, 84, 236, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --h2-title-color: #f2f2f2;
+    --left-btn-hover-color: rgba(87, 84, 236, 1);
+    --right-btn-hover-color: rgba(28, 122, 28, 1);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 2000ms;
+}
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    margin: 0;
+}
+
+/* Name of the bird */
+h2 {
+    font-size: 2rem;
+    color: var(--h2-title-color);
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+/* button to know more */
+.btn {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 0.2rem solid var(--h2-title-color);
+    padding: 1.5rem;
+    color: var(--h2-title-color);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 15rem;
+    text-transform: uppercase;
+}
+
+
+/* hover effects on buttons */
+/* on left side button */
+.split.left .btn:hover {
+    background-color: var(--left-btn-hover-color);
+    border-color: var(--left-btn-hover-color);
+}
+
+/* on right side button */
+.split.right .btn:hover {
+    background-color: var(--right-btn-hover-color);
+    border-color: var(--right-btn-hover-color);
+}
+
+/* whole container */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+
+/* split parts */
+/* full */
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* left */
+.split.left {
+    left: 0;
+    background: url('split_landing 1.jpg') no-repeat center center/cover;
+}
+
+/* background color for text on left */
+.split.left::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
+}
+
+/* right */
+.split.right {
+    right: 0;
+    background: url('split_landing 2.jpg') no-repeat center center/cover;
+}
+
+/* background color for text on right*/
+.split.right::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
+}
+
+/* for smooth transition */
+.split.right, .split.left, .split.right::before, .split.left::before {
+    transition: all var(--speed) ease-in;
+}
+
+/* hover effect on left and right side */
+.hover-left .left {
+    width: var(--hover-width);
+}
+
+.hover-left .right {
+    width: var(--other-width);
+}
+
+.hover-right .right {
+    width: var(--hover-width);
+}
+
+.hover-right .left {
+    width: var(--other-width);
+}
+
+/* for small screens */
+@media(max-width: 800px){
+    h2{
+        font-size: 1.2rem;
+    }
+    .btn{
+        padding: 1.2rem;
+        width: 10rem;
+    }
+}
