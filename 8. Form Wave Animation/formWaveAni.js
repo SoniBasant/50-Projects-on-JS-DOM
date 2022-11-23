@@ -1,10 +1,17 @@
 
 
-// 9. Form Wave Animation
+// 8. Form Wave Animation
 
 // Important concepts for the project
 
-
+// 1. querySelectorAll()
+// 2. forEach()
+// 3. split()
+// 4. map()
+// 5. join()
+// 6. span
+// 7. transition-delay
+// 8. template literal
 
 // variables
 
