@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+body {
+    background-color: rgba(255, 0, 81, 0.763);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    margin: 0;
+}
+
+/* buttons styling, created in JS */
+.btn {
+    background-color: rgb(101, 137, 9);
+    border-radius: 5px;
+    border: none;
+    color: #f2f2f2;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+    /* transition: 0.3s; */
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* to shrink buttons when clicked */
+.btn:active {
+    transform: scale(0.98);
+}
