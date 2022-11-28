@@ -1,0 +1,61 @@
+
+:root {
+    --body-backG-color: #2b88f0;
+    --content-color: #fffbfb;
+    --choice-color: #ef0fdc;
+    --highlight-color: #1e367a;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+body {
+    background-color: var(--body-backG-color);
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    margin: 0;
+}
+
+.container {
+    width: 500px;;
+}
+
+h3 {
+    color: var(--content-color);
+    margin: 10px 0px 20px;
+    text-align: center;
+}
+
+textarea {
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-family: inherit;
+    padding: 10px;
+    margin: 0px 0px 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.tag {
+    background-color: var(--choice-color);
+    color: var(--content-color);
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0px 5px 10px 0px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.tag.highlight {
+    background-color: var(--highlight-color);
+}
