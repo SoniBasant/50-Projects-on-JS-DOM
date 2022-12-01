@@ -1,0 +1,51 @@
+
+:root {
+    --body-backG-color:#8e44ad;
+    --body-font-color:#fff;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+body {
+    background-color: var(--body-backG-color);
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--body-font-color);
+    text-align: center;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 50px;
+}
+
+.counter {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+@media(max-width: 580px) {
+    .container {
+        flex-direction: column;
+    }
+    .counter {
+        font-size: 40px;
+    }
+}
