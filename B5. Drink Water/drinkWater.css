@@ -1,0 +1,113 @@
+:root{
+    --body-backG-color: #3494e4;
+    --body-font-color: #fdfdfd;
+    --cup-border-color: #144fc6;
+    --cup-backG-color: #fff;
+    --small-cup-backG-color: rgba(255, 255, 255, 0.8);
+    --fill-cup-color: #6ab3f8;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+body {
+    background-color: var(--body-backG-color);
+    color: var(--body-font-color);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin: 10px 0px 0px;
+    /* top rightANDleft bottom */
+}
+
+h3 {
+    font-weight: 400;
+    margin: 10px 0px;
+    /* topANDbottom rightANDleft */
+}
+
+/* all cups */
+.cup {
+    background-color: var(--cup-backG-color);
+    border: 4px solid var(--cup-border-color);
+    color: var(--cup-border-color);
+    border-radius: 0px 0px 40px 40px;
+    height: 330px;
+    width: 150px;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* small cups */
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+}
+.cup.cup-small {
+    height: 95px;
+    width: 50px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: var(--small-cup-backG-color);
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+.cup.cup-small.full {
+    background-color: var(--fill-cup-color);
+    color: #fff;
+}
+
+/* text inside big cup */
+.remained {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.remained span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.remained small {
+    font-size: 12px;
+}
+
+.percentage {
+    background-color: var(--fill-cup-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    height: 0px;
+    transition: 0.3s ease;
+}
+
+.text {
+    text-align: center;
+    margin: 0px 0px 5px;
+}
