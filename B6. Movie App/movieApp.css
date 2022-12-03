@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+:root {
+    --primary-color: #f4f5f9;
+    --secondary-color: #070f6b;
+    --placeholder-color: #7378c5;
+    --off-white: #fdfdfd;
+}
+
+* {
+    box-sizing: border-box; 
+    /* if we add border or padding, it doesn't affect the width of it.  */
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* for top colour block and search bar */
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+}
+
+/* search bar */
+.search {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--secondary-color);
+}
+
+.search::placeholder {
+    color: var(--placeholder-color);
+}
+
+.search:focus {
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+/* main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* about movie */
+.movie {
+    width: 300px;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+/* image */
+.movie img {
+    width: 100%;
+}
+
+/* info */
+.movie-info {
+    color: var(--off-white);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* title */
+.movie-info h3 {
+    margin-top: 0px;
+}
+
+/* rating */
+.movie-info span {
+    background-color: var(--primary-color);
+    padding: 0.20rem 0.4rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* rating colours */
+.movie-info span.green {
+    color: lightgreen;
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: red;
+}
+
+/* overview style */
+.overview {
+    background-color: var(--off-white);
+    padding: 2rem;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    max-height: 100%;
+    overflow-y: auto;
+    transform: translateY(101%);
+    transition: transform 0.6s ease-in;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
