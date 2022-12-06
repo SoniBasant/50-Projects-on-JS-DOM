@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+:root {
+    --button-color: purple;
+    --circle-color: #fff;
+}
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    margin: 0px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: #fff;
+    border: 1px solid var(--button-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 30px;
+    overflow: hidden;
+    margin: 10px 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button .circle {
+    position: absolute;
+    background-color: var(--circle-color);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
