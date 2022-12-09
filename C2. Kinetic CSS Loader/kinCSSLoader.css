@@ -1,0 +1,78 @@
+
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+:root {
+    --body-color: #2c3;
+    --length-kin: 80px;
+}
+
+body {
+    background-color: var(--body-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    margin: 0px;
+}
+
+.kinetic {
+    position: relative;
+    height: var(--length-kin);
+    width: var(--length-kin);
+}
+
+.kinetic::after, .kinetic::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border: 50px solid transparent;
+    border-bottom-color: #fff;
+    animation: rotateTriangle1 2s linear infinite 0.5s;
+}
+
+.kinetic::before {
+    transform: rotate(90deg);
+    animation: rotateTriangle2 2s linear infinite;
+}
+
+@keyframes rotateTriangle1 {
+    
+    0%, 25% {
+        transform: rotate(0deg);
+        border-bottom-color: rgb(243, 10, 10);
+    }
+
+    50%, 75% {
+        transform: rotate(180deg);
+        border-bottom-color: rgb(205, 235, 12);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        border-bottom-color: rgb(229, 17, 130);
+    }
+}
+
+@keyframes rotateTriangle2 {
+    
+    0%, 25% {
+        transform: rotate(90deg);
+        border-bottom-color: rgb(205, 235, 12);
+    }
+
+    50%, 75% {
+        transform: rotate(270deg);
+        border-bottom-color: rgb(229, 17, 130);
+    }
+
+    100% {
+        transform: rotate(450deg);
+    }
+}
