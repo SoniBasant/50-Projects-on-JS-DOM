@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+:root {
+    --basic-purple: rebeccapurple;
+    --off-white: #f3f3f3;
+    --light-white: #fff;
+}
+body {
+    background-color: var(--basic-purple);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    margin: 0px;
+}
+
+.btn {
+    background-color: var(--off-white);
+    color: var(--basic-purple);
+    font-family: inherit;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+#toasts {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.toast {
+    background-color: var(--light-white);
+    color: var(--basic-purple);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+}
+
+/* for PROGRAM 2- FIXED OUTPUT  */
+
+.toast.info {
+    color: var(--basic-purple);
+}
+
+.toast.success {
+    color: green;
+}
+
+.toast.error {
+    color: red;
+}
