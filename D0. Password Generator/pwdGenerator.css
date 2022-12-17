@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+:root {
+    --primary-color: #3b3b98;
+    --secondary-color: #23235b;
+    --off-white: #f3f3f3;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--off-white);
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    padding: 10px;
+    margin: 0px;
+}
+
+h2 {
+    margin: 10px 0px 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: var(--secondary-color);
+    box-shadow:  -3px -3px 3px 0px rgba(240, 243, 239, 0.212), 3px 3px 7px 0px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.result-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.result-container #result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.btn {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--off-white);
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn-large {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.btn-large:focus {
+    outline: none;
+}
+
+.btn-large:active {
+    transform: scale(0.99);
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+}
