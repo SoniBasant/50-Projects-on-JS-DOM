@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 330px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0px);
+    /* minus(-)  sign due to movement on left side*/
+    /* it will be changed to 400px through JS */
+    /* transform: translateX(0px); */
+    transition: transform 0.5s ease-in-out;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: blueviolet;
+    color: aliceblue;
+    border: none;
+    padding: 0.5rem;
+    /* 1rem = 16px by default */
+    cursor: pointer;
+    width: 49.8%;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
+}
