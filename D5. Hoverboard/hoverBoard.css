@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+:root {
+    --body-backG-color: rgb(15, 15, 15);
+    --square-base-backG-color: #1d1d1d;
+}
+
+body {
+    background-color: var(--body-backG-color);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*don't want scroll bar to appear.*/
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.setting {
+    margin-bottom: 20px;
+    background-color: #555;
+    border-radius: 2px;
+    padding: 4px 5px;
+}
+
+label {
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 20px; 
+}
+
+span {
+    color: #fff;
+    background-color: #555;
+    padding: 0px 9px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.square {
+    background-color: var(--square-base-backG-color);
+    box-shadow: 0px 0px 2px #000;
+    /* height: 15px;
+    width: 15px; */
+    margin: 2px;
+    transition: 2s ease;
+}
+
+.square:hover {
+    transition-duration: 0s;
+}
