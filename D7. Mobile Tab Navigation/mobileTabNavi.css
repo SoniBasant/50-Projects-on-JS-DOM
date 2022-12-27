@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
+}
+
+body {
+    background-color: rgba(155, 89, 182, 0.7);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+.phone {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #eee;
+    border-radius: 15px;
+    height: 500px;
+    width: 330px;
+}
+
+.phone .content {
+    opacity: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: calc(100% - 60px);
+    width: 100%;
+    transition: opacity 0.4s ease;
+}
+.phone .content.show {
+    opacity: 1;
+}
+
+nav {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin-top: -5px;
+    width: 100%;
+}
+
+nav ul {
+    background-color: #fff;
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+}
+
+nav li {
+    color: #777;
+    cursor: pointer;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li p {
+    font-size: 12px;
+    margin: 2px 0px;
+    /* paragraph have margin of 10px by default */   
+}
+
+nav ul li:hover, nav ul li.active {
+    color: #8e44ad;
+}
