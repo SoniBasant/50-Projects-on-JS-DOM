@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> <!--includes meta data, link of stylesheet, title of the project-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Strength Background</title>
+        <!-- tailwind CSS framework Version 1.8.11 from cdnjs -->
+        <!-- not compile it, just use cdnjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.11/tailwind.min.css" integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="stylesheet" href="pwdStrengthBackG.css">
+        <script defer src="pwdStrengthBackG.js"></script> <!--JS link-->
+    </head>
+    <body>
+
+        <!-- for background of the page -->
+        <div class="background" id="background"></div>
+
+        <!-- 
+            bg > background
+            rounded > for border (standard radius)
+            p-10 > padding all around
+            shadow-md > shadow medium (standard size)
+            text-3xl > 3 times than the standard size
+            text-sm > smaller text
+            text-gray-700 > strength of gray colour, here 700
+            .my > margin on Y-axis
+            mt > margin top
+            w-full > width full
+            py > padding on Y-axis
+            text-white > for white font
+         -->
+
+        <!-- for form -->
+        <form class="bg-white rounded p-10 text-center shadow-md">
+
+            <!-- heading -->
+            <h1 class="text-3xl">Image Password Strength</h1>
+            <!-- line -->
+            <p class="text-sm text-gray-700">Change the password to see the effect</p>
+
+            <!-- label and input for email-->
+            <div class="my-4 text-left">
+                <label for="email" class="text-gray-900">Email</label>
+                <input 
+                    type="text" 
+                    class="border block w-full p-2 mt-2 rounded" 
+                    id="email" 
+                    placeholder="Enter Email" />
+            </div>
+
+            <!-- label and input for password-->
+            <div class="my-4 text-left">
+                <label for="email" class="text-gray-900">Password</label>
+                <input 
+                    type="password" 
+                    class="border block w-full p-2 mt-2 rounded" 
+                    id="password" 
+                    placeholder="Enter Password" />
+            </div>
+
+            <!-- submit button -->
+            <button class="bg-black text-white py-2 mt-4 inline-block w-full rounded" type="submit">Submit</button>
+
+        </form>
+     
+    </body>
+</html>
