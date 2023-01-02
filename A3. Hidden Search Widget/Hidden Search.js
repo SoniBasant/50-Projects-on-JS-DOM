@@ -4,8 +4,9 @@
 // Important concepts for the project
 
 // 1. querySelector()
-// 2. addEventListener('click'
-// 3. element.classList.toggle('active')
+// 2. addEventListener('click')
+// 3. element.classList.toggle()
+// 4. focus()
 
 
 // variables
