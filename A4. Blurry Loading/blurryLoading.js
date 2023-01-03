@@ -1,13 +1,17 @@
 
-// Blurry Loading
+// 5. Blurry Loading
 
 // important concept for this project
+
 // 1. setInterval()
 // 2. clearInterval()
 // 3. template literals
 // 4. map a range of numbers to another range of numers 
+// 5. querySelector()
+// 6. style.opacity
+// 7. style.filter > blur filter
 
-
+// variables
 const loadText = document.querySelector('.loading-text');
 const background = document.querySelector('.backG');
 
@@ -22,7 +26,7 @@ let int = setInterval(blurring, 30);
 // 'clearInterval()' is called, or window is closed
 
 function blurring() {
-    load++
+    load++;
 
     if(load>99) {
         clearInterval(int);
