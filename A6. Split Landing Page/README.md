@@ -4,7 +4,7 @@ You will get two split landing page. Two different pictures with their correspon
 
 As you enter mouse into one page, that one will occupy 75% of the screen and remaining 25% for other page. When your mouse leave the page, screen will restore to normal split position. The button present in each page have distinct colour style for hover.
 
-Important JS and CSS concepts for the project
+### Important JS and CSS concepts for the project
 
 1. querySelector()
 2. addEventListener('mouseenter')
