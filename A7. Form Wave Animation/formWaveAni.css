@@ -36,6 +36,8 @@ label {
     /* because form control is relative */
     top: 15px;
     left: 0px;
+    pointer-events: none;
+    /* so that label become non-clickable */
 }
 
 a {
