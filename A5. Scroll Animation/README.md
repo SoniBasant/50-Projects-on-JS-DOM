@@ -6,12 +6,10 @@ This is exactly what this project is about,"Scroll Animation".
 
 This project is very good for learning how to measure size of any element from different positions. Also, how to decrease the inner height of screen.
 
-Important JS and CSS concepts for the projects
-1. element.getBoundingClientRect() -> to return a DOMRect object providing information about the size of an element and its position relative to the viewport.
-I used ".top" for calculating position from the top.
+### Important JS and CSS concepts for the projects
 
-2. window.innerHeight -> to check and change the height of window
-
+1. element.getBoundingClientRect()
+2. window.innerHeight
 3. addEventListener('scroll')
 4. querySelectorAll
 5. forEach()
