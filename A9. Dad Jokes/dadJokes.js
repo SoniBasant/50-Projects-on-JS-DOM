@@ -6,10 +6,9 @@
 // 1. getElementById()
 // 2. addEventListener('click')
 // 3. async -> utility module which provides functions for working with asynchronous JS
-// 4. headers 
-// 5. Accept 
-// 6. await
-// 7. fetch
+// 4. headers, Accept
+// 5. await, fetch
+// 6. innerText
 
 // use async with await
 
