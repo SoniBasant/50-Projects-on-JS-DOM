@@ -1,10 +1,10 @@
 # 9. Sound Board Project
 
-This is first sound based project in this 50 project series. In this you will see six buttons with names applause, boo, gasp, tada, victory and wrong. When you press them you will hear different sounds as the name shows.
+This is an interesting sound based project in this 50 project series. In this you will see six buttons with names applause, boo, gasp, tada, victory and wrong. When you press them you will hear different sounds as the name shows.
 
-Behind the screen, all buttons are made with JS, from its content to style. Sounds are in different folder titled 'Sounds' and linked to HTML file with src (source) attribute.
+Instead of adding buttons through HTML, they are created with JS. Sounds are in different folder titled 'Sounds' and linked to HTML file with src (source) attribute.
 
-Important concepts for the project
+### Important concepts for the project
 
 1. array
 2. forEach() loop
