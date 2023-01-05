@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> <!--includes meta data, link of stylesheet, title of the project-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="quizApp.css">
+        <script defer src="quizApp.js"></script> <!--JS link-->
+    </head>
+    <body>
+     
+        <div class="quiz-container" id="quiz">
+
+            <!-- Q n A -->
+            <div class="quiz-header">
+                <!-- question -->
+                <h2 id="question">Ques text</h2>
+
+                <!-- answer options -->
+                <ul>
+
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">Ques</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">Ques</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Ques</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_text">Ques</label>
+                    </li>
+                </ul>
+            </div>
+
+            <button id="submit">Submit</button>
+        </div>
+
+     
+    </body>
+</html>
