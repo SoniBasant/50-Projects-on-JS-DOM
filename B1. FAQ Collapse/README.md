@@ -1,10 +1,8 @@
 # 12. FAQ Collapse
 
-The normal FAQ you see everywhere is the concept of this project. As you click on the down key present at right of question, answer will display. To close you have to click on the cross icon. I used 'toggle' with 'classlist' so you can open and close from the same place.
+The FAQ you see everywhere is the basis of this project. As you click on the down key present at right side of question, answer will display. To close you have to click on the cross icon.
 
-But the answer has an icon from font awesome. For this I had to use 'Font Awesome 5 Free' font-family. I used icon twice with different direction, position and colour.
-
-Important JS and CSS concepts for project
+### Important JS and CSS concepts for project
 
 1. querySelectorAll()
 2. forEach()
