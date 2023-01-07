@@ -73,12 +73,17 @@ function randomSelect() {
     const interval = setInterval(() => {
         // for highlighting
         const randomTag = pickRandomTag();
-        highlightTag(randomTag);
+        
+        // to remove undefined entry
+        if(randomTag !== undefined) {
 
-        // for unhighlighting
-        setTimeout(() => {
-            unHighlightTag(randomTag)
-        }, 100)
+            highlightTag(randomTag);
+    
+            // for unhighlighting
+            setTimeout(() => {
+                unHighlightTag(randomTag)
+            }, 100)
+        }
     }, 100);
 
     // for stopping and picking a random tag to land on highlight
