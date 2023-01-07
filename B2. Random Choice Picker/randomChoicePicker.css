@@ -46,6 +46,10 @@ textarea {
     outline: none;
 }
 
+textarea:focus {
+    outline: none;
+}
+
 .tag {
     background-color: var(--choice-color);
     color: var(--content-color);
