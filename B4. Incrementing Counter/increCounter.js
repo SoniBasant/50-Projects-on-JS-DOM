@@ -10,6 +10,9 @@
 // 5. template literal
 // 6. Math.ceil()
 // 7. setTimeout()
+// 8. arrow function
+// 9. if...else
+// 10. media query
 
 // variables
 
