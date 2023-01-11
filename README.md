@@ -12,4 +12,4 @@ To keep it in sequence, I used-
 - D0-D9 for 31-40,
 - E0-E9 for 41-50
 
-### Projcts are in continuous improvement.
+### Projects are in continuous improvement.
