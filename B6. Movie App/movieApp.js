@@ -1,10 +1,10 @@
 
 // 17. Movie App
 
-// Important concepts for the project
+// Important JS and CSS concepts for the project
 
 // 1. getElementById()
-// 2. async
+// 2. async, await, fetch
 // 3. forEach()
 // 4. .classList.add()
 // 5. .createElement()
@@ -13,7 +13,10 @@
 // 8. if..else if
 // 9. addEventListener('submit')
 // 10. preventDefault()
-
+// 11. API of themoviedb
+// 12. innerHTML
+// 13. window.location.reload()
+// 14. transition, transform
 
 // variables
 const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1'
@@ -26,13 +29,13 @@ const search = document.getElementById('search');
 
 
 // Get initial movies
-getMovies(API_URL)
+getMovies(API_URL);
 
 async function getMovies(url) {
     const res = await fetch(url);
     const data = await res.json(); 
 
-    showMovies(data.results)
+    showMovies(data.results);
 }
 
 
@@ -60,7 +63,7 @@ function showMovies(movies) {
             </div>
         `; 
         main.appendChild(movieEl);
-    })
+    });
 }
 
 // function for different rating of movie
