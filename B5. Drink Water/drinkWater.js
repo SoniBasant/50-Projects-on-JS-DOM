@@ -13,7 +13,11 @@
 // 8. .length
 // 9. template literals
 // 10. element.style.visibility -> hidden and visible
-
+// 11. arrow function
+// 12. classList.contains
+// 13. nextElementSibling
+// 14. :root
+// 15. @import
 
 // variables
 
