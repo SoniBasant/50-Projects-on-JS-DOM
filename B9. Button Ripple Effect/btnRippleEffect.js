@@ -6,12 +6,17 @@
 // 1. querySelectorAll()
 // 2. forEach()
 // 3. addEventListener('click')
-// 4. clientX and clientY
+// 4. pageX and pageY to get the coordinates relative to <html> element
 // 5. .offsetLeft and .offsetTop
 // 6. document.createElement()
 // 7. .classList.add() and .classList.remove()
 // 8. setTimeout()
 // 9. appendChild()
+// 10. arrow function
+// 11. e.target
+// 12. @Keyframes
+// 13. :root
+// 14. transform, translate
 
 
 // variables
@@ -22,8 +27,8 @@ button.forEach(button => {
     button.addEventListener('click', function(e) {
 
         // get x and y axis of an click event
-        const x = e.clientX;
-        const y = e.clientY;
+        const x = e.pageX;
+        const y = e.pageY;
 
         // get the top and left positions of element (in px)
         const buttonTop = e.target.offsetTop;
@@ -43,7 +48,7 @@ button.forEach(button => {
         // add span into circle
         this.appendChild(circle);
 
-        // remove previously added circle
+        // remove previously added circle after 500ms (0.5s)
         setTimeout(() => circle.remove(), 500);
     });
 });
