@@ -1,7 +1,7 @@
 
 // 18. Background Slider
 
-// Important concepts for the project
+// Important JS and CSS concepts for the project
 
 // 1. querySelectorAll()
 // 2. getElementById()
@@ -10,6 +10,11 @@
 // 5. forEach()
 // 6. classList.remove()
 // 7. classList.add()
+// 8. arrow function
+// 9. if
+// 10. array length method
+// 11. calc method
+// 12. transform, translate
 
 // variables
 
