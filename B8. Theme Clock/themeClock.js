@@ -1,7 +1,7 @@
 
 // 19. Theme Clock
 
-// Important concepts for the project
+// Important JS ans CSS concepts for the project
 
 // 1. querySelector()
 // 2. array 
@@ -15,7 +15,10 @@
 // 10. ternary operator
 // 11. map a range of numbers to another range of numers 
 // 12. setInterval(function, timeMS)
- 
+// 13. if..else
+// 14. @import
+// 15. :root
+// 16. transform origin, transition, translate
 
 // variables
 
@@ -66,9 +69,9 @@ function setTime() {
     const ampm = hours >= 12 ? 'PM' : 'AM';
     
     // clock hand movement
-    hourEl.style.transform = `translate(-43%, -100%) rotate(${scale(hoursForClock, 0, 11, 0, 360)}deg)`;
-    minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(minutes, 0, 59, 0, 360)}deg)`;
-    secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0, 360)}deg)`;
+    hourEl.style.transform = `translate(-43%, -100%) rotate(${scale(hoursForClock, 0, 12, 0, 360)}deg)`;
+    minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(minutes, 0, 60, 0, 360)}deg)`;
+    secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 60, 0, 360)}deg)`;
 
     // digital clock 
     timeEl.innerHTML = `${hoursForClock < 10 ? `0${hoursForClock}` : hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`;
