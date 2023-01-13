@@ -11,6 +11,9 @@
 // 4. offsetX and offsetY
 // 5. innerHTML
 // 6. if..else 
+// 7. :last-child selector
+// 8. arrow function
+// 9. canvas.width and canvas.height
 
 
 // variables
@@ -40,7 +43,7 @@ canvas.addEventListener('mousedown', (e) => {
     // to check
 });
 
-canvas.addEventListener('mouseup', (e) => {
+document.addEventListener('mouseup', (e) => {
     isPressed = false;
 
     x = undefined;
