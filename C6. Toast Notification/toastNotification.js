@@ -13,6 +13,11 @@
 // 8. setTimeout()
 // 9. Math.floor()
 // 10. Math.random()
+// 11. ternary operator
+// 12. arraow function
+// 13. element.remove()
+// 14. :root
+// 15. @import
 
 // PROGRAM 1
 
