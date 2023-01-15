@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --left-bg-color: rgba(87, 84, 236, 0.7);
-    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --left-bg-color: rgba(87, 84, 236, 0.2);
+    --right-bg-color: rgba(43, 43, 43, 0.2);
     --h2-title-color: #f2f2f2;
     --left-btn-hover-color: rgba(87, 84, 236, 1);
     --right-btn-hover-color: rgba(28, 122, 28, 1);
@@ -86,7 +86,7 @@ h2 {
 /* left */
 .split.left {
     left: 0;
-    background: url('split_landing 1.jpg') no-repeat center center/cover;
+    background: url('splitLanding1.jpg') no-repeat center center/cover;
 }
 
 /* background color for text on left */
@@ -101,7 +101,7 @@ h2 {
 /* right */
 .split.right {
     right: 0;
-    background: url('split_landing 2.jpg') no-repeat center center/cover;
+    background: url('splitLanding2.jpg') no-repeat center center/cover;
 }
 
 /* background color for text on right*/
