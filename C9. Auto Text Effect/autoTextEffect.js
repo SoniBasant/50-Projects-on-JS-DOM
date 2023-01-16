@@ -8,7 +8,9 @@
 // 3. slice()
 // 4. setTimeout()
 // 5. addEventListener('input')
-
+// 6. arrow function
+// 7. if
+// 8. .value
 
 // variables
 
@@ -24,7 +26,7 @@ writeText();
 function writeText() {
     textEl.innerText = text.slice(0, idx);
 
-    idx++
+    idx++;
 
     // to keep going animation
     if(idx > text.length) {
