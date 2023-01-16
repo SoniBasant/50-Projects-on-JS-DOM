@@ -1,16 +1,18 @@
 
 // 28. GitHub Profiles
 
-// Important concepts for the project
+// Important JS and CSS concepts for the project
 
 // 1. GitHub REST API
 // 2. getElementById()
 // 3. async, axios, try, catch
-// 4. tmplate literals
+// 4. template literals
 // 5. forEach()
 // 6. classList, href, target, appendChild
 // 7. addEventListener('submit')
 // 8. preventDefault
+// 9. :root
+// 10. @media query
 
 // axios > promise based HTTP client for the browser and node.js
 
@@ -56,6 +58,8 @@ async function getRepos(username) {
 }
 
 function createUserCard(user) {
+    const userID = user.name || user.login;
+    const userBio = user.bio ? `<p>${user.bio}</p>` : '';
     const cardHTML = `
     <div class="card">
 
@@ -64,8 +68,8 @@ function createUserCard(user) {
         </div>
 
         <div class="user-info">
-            <h2>${user.name}</h2>
-            <p>${user.bio}</p>
+            <h2>${userID}</h2>
+            <p>${userBio}</p>
 
             <ul>
                 <li>${user.followers} <strong> Followers</strong></li>
