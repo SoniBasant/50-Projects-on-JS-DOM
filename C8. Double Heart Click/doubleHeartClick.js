@@ -2,7 +2,7 @@
 
 // 29. Double Click Heart
 
-// Important concepts for the project
+// Important JS and CSS concepts for the project
 
 // 1. querySelector()
 // 2. addEventListener('click')
@@ -15,7 +15,11 @@
 // 9. appendChild
 // 10. setTimeout
 // 11. element.remove
-// 12. random colours for hearts
+// 12. Math.random() and Math.floor()
+// 13. arrow function
+// 14. if..else
+// 15. @keyframes
+// 16. transform, translate
 
 // variables
 
@@ -30,8 +34,8 @@ image.addEventListener('click', function(e) {
     if(clickTime === 0) {
         clickTime = new Date().getTime();
     } else {
-        // 800 can be reduced / increased
-        if((new Date(). getTime() - clickTime) < 800) {
+        // 400 can be reduced / increased
+        if((new Date(). getTime() - clickTime) < 400) {
             createHeart(e);
             clickTime = 0;
         } else {
