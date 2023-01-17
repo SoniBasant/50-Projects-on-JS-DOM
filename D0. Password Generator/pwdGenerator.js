@@ -16,6 +16,12 @@
 // 6. .slice
 // 7. Math.floor()
 // 8. Math.random()
+// 9. filter
+// 10. arrow function
+// 11. if
+// 12. for
+// 13. .value
+// 14. navigator.clipboard.writeText()
 
 
 // variables
