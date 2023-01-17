@@ -1,12 +1,17 @@
 
 // 32. Good, Cheap, Fast Checkboxes
 
-// Important concepts for the project
+// Important JS and CSS concepts for the project
 
 // 1. querySelector()
-// 2. forEach()
-// 3. addEventListener('change')
+// 2. querySelectorAll()
+// 3. forEach()
 // 4. if, logical operator
+// 5. arrow function
+// 6. target
+// 7. addEventListener('change')
+// 8. @keyframes
+// 9. :root
 
 
 // variables
