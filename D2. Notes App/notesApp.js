@@ -14,6 +14,11 @@
 // 9. addEventListener() click, input 
 // 10. forEach()
 // 11. appendChild
+// 12. if
+// 13. ternary operator
+// 14. .value
+// 15. remove
+// 16. arrow function
 
 
 // variables
