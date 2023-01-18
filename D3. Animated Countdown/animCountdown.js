@@ -1,7 +1,7 @@
 
 // 34. Animated Countdown
 
-// Important concepts for the project
+// Important JS and CSS concepts for the project
 
 // 1. querySelectorAll()
 // 2. classList > add, remove, value
@@ -9,6 +9,9 @@
 // 4. addEventListener('animationend')
 // 5. nextElementSibling
 // 6. if...else
+// 7. @keyframes
+// 8. transform, translate
+// 9. radial-gradient
 
 
 // variables
