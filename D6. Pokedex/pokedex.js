@@ -13,6 +13,10 @@
 // 8. map
 // 9. template literals
 // 10. appendChild
+// 11. API> pokeapi
+// 12. classList.add()
+// 13. arrow function
+// 14. element.style.backgroundColor
 
 
 // variables
