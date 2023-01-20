@@ -1,16 +1,18 @@
 
 // 40. 3D Background Boxes
 
-// Important concepts for the project
+// Important JS and CSS concepts for the project
 
 // 1. getElementById()
 // 2. for loop
 // 3. createElement()
 // 4. classList > add and toggle
 // 5. element.style.backgroundPosition
-// 6. template literals
+// 6. Template literals
 // 7. appendChild()
 // 8. addEventListener('click')
+// 9. transform, translate, transition
+// 10. arrow function
 
 // variables
 
