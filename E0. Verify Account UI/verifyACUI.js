@@ -11,6 +11,10 @@
 // 6. if...else
 // 7. setTimeout(function, time in ms)
 // 8. element.style.borderColor
+// 9. arrow function
+// 10. forEach()
+// 11. .value
+// 12. @media
 
 // variables
 
