@@ -1,7 +1,7 @@
 
 // 44. Custom Range Slider
 
-// Important concepts for the project
+// Important JS and CSS concepts for the project
 
 // 1. getElementById()
 // 2. addEventListener('input')
@@ -13,6 +13,10 @@
 // 8. .min and .max
 // 9. scale() for conversion of one type of range to another
 // map a range of numbers to another range of numbers
+// 10. arrow function
+// 11. Template literals
+// 12. -webkit-appearance
+// 13. input type: range
 
 // variables
 const range = document.getElementById('range');
