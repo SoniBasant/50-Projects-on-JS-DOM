@@ -8,6 +8,10 @@
 // 3. object
 // 4. setInterval()
 // 5. innerText
+// 6. if
+// 7. @keyframes
+// 8. @media
+// 9. transform-origin
 
 // variables
 const testimonialsContainer = document.querySelector('.testimonial-container');
