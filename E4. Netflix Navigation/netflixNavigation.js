@@ -1,12 +1,14 @@
 
 // 45. Netflix Navigation
 
-// Important concepts for the project
+// Important JS and CSS concepts for the project
 
 // 1. querySelectorAll() > give us node FileList, can be loop through
 // 2. addEventListener('click')
 // 3. forEach()
 // 4. classList > add and remove
+// 5. arrow function
+// 6. transform, translate, transition
 
 // variables
 
