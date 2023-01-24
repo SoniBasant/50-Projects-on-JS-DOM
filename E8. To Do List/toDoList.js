@@ -16,6 +16,9 @@
 // 11. querySelectorAll()
 // 12. appendChild()
 // 13. forEach()
+// 14. if
+// 15. arrow function
+// 16. .value and .text
 
 // variables
 
