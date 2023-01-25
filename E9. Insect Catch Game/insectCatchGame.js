@@ -1,7 +1,7 @@
 
 // // 50. Insect Catch Game
 
-// // Important concepts for the project
+// // Important JS and CSS concepts for the project
 
 // 1. querySelectorAll()
 // 2. getElementById()
@@ -18,6 +18,10 @@
 // 13. window.innerHeight and window.innerWidth
 // 14. appendChild()
 // 15. Math.floor() and Math.random()
+// 16. Arrow function
+// 17. if
+// 18. @import
+// 19. transition, transform, translate
 
 // variables
 
