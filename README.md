@@ -14,8 +14,12 @@ To keep it in sequence, I used-
 
 ### Projects are in continuous improvement.
 
-| No. | Project Name | Live Link |
-|-----:|---------------|---------|
+Read my article on this project series- [Introduction of Project Making Process](https://sonibasant.hashnode.dev/introduction-of-the-article-series)
+
+This is first introductory article in this series. More to come.
+
+| No. | Project Name | Live Link | Article |
+|-----:|---------------|---------|---------|
 | A0. | Expanding Cards | [Link](https://sonibasant.github.io/50-Projects-on-JS-DOM/A0.%20Expanding%20Cards/Expan-cards.html) |
 | A1. | Progress steps | [Link](https://sonibasant.github.io/50-Projects-on-JS-DOM/A1.%20Progress%20Steps/Prog-steps.html) |
 | A2. | Rotating Navigation | [Link](https://sonibasant.github.io/50-Projects-on-JS-DOM/A2.%20Rotating%20Navigation/Rotate-Navi.html) |
