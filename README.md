@@ -70,3 +70,14 @@ This is first introductory article in this series. More to come.
 | E7. | Random Image Feed | [Link](https://sonibasant.github.io/50-Projects-on-JS-DOM/E7.%20Random%20Image%20Feed/randomImgFeed.html) |
 | E8. | To Do List | [Link](https://sonibasant.github.io/50-Projects-on-JS-DOM/E8.%20To%20Do%20List/toDoList.html) |
 | E9. | Insect Catch Game | [Link](https://sonibasant.github.io/50-Projects-on-JS-DOM/E9.%20Insect%20Catch%20Game/insectCatchGame.html) |
+
+---
+Hi, I am Basant Soni. I make projects with HTML, CSS and JavaScript.
+
+My Portfolio: [Portfolio Link](https://sonibasant.github.io/Portfolio-Basant-Soni/portfolio.html)
+
+Links to my online presence : [GitHub](https://github.com/SoniBasant), [Codepen](https://codepen.io/sonibasant), [Frontend Mentor](https://www.frontendmentor.io/profile/SoniBasant), [FreeCodeCamp](https://www.freecodecamp.org/SoniBasant)
+
+Read my articles on : [Hashnode](https://sonibasant.hashnode.dev/)
+
+User Id for all of the above : SoniBasant
