@@ -8,10 +8,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     overflow: hidden; /*don't want scroll bar to appear.*/
     margin: 0;
 }
+
+h1 {
+    color: #afafaf;
+    font-size: 1.5rem;
+}
+
 .container {
     display: flex;
     width:90vw;
