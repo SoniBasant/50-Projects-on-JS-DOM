@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> <!--includes meta data, link of stylesheet, title of the project-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Prog-steps.css">
-        <title>Progress Steps</title>
-    </head>
-    <body>
-        
-        <div class="container"> <!-- around everything -->
-            <div class="progress-container"> <!--for progress line and circle-->
-                <div class="progress" id="progress"></div><!--for progress line-->
-                <!--for circles-->
-                <div class="circle active">1</div> <!--make the first one active-->
-                <div class="circle">2</div>
-                <div class="circle">3</div>
-                <div class="circle">4</div>
-            </div>
+<head> <!--includes meta data, link of stylesheet, title of the project-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Basant Soni">
+    <meta name="keywords" content="50 Projects in 50 Days, Udemy, Frontend, pure css, html, HTML5, Basant Soni, sonibasant, 
+    javascript, Vanilla javascript Projects, DOM, DOM manipulation, semantic elements, progress steps,
+    progress bar, numbered progress bar, next previous button /">
+    <title>Progress Steps</title>
+    <link rel="stylesheet" href="Prog-steps.css">
+    <script defer src="Prog-steps.js"></script>
+</head>
+<body>
+    <h1>Progress <span>Steps</span></h1>
+    <main class="container"> <!-- around everything -->
+        <section class="progress-container"> <!--for progress line and circle-->
+            <div class="progress" id="progress"></div><!--for progress line-->
+            <!--for circles-->
+            <div class="circle active">1</div> <!--make the first one active-->
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+        </section>
 
-            <!--buttons-->
-            <button class="btn" id="prev" disabled>Prev</button>
-            <!--previous button initially disabled, will change it with JS-->
-            <button class="btn" id="next">Next</button> <!--next button-->
-        
-        </div>
+        <!--buttons-->
+        <button class="btn" id="prev" disabled>Prev</button>
+        <!--previous button initially disabled, will change it with JS-->
+        <button class="btn" id="next">Next</button> <!--next button-->
+    
+    </main>
 
-        <script src="Prog-steps.js"></script> <!--JS link-->
-    </body>
+</body>
 </html>
