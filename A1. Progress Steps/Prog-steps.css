@@ -13,7 +13,7 @@ body {
     background-color: #f6f7fb;
     font-family: 'Muli', sans-serif;
     display: flex; /*flex for all-> numbers, line, circle and button*/
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -21,6 +21,16 @@ body {
     margin: 0;
 }
 
+h1 {
+    position: absolute;
+    top: 2rem;
+    color: #999;
+    font-size: 1.5rem;
+}
+
+h1 > span {
+    color: var(--line-border-fill);
+}
 .container { 
     text-align: center; /*for prev and next*/
 }
