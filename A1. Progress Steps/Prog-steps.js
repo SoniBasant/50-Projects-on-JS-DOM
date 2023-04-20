@@ -1,26 +1,11 @@
 
-// 2. Progress Steps
-
-// Important concepts for the project
-
-// 1. addEventListener('click')
-// 2. querySelectorAll()
-// 3. forEach()
-// 4. getElementById()
-// 5. .disabled
-// 6. classList > add, remove
-// 7. element.length
-// 8. style.width
-// 9. if...else
-
 // variables
 
 const progress = document.getElementById('progress');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const circles = document.querySelectorAll('.circle');
-/*As circle is more than one, so use dot before circle making it class
-and querySelectorAll which will bring them all in as a node list
+/*querySelectorAll will bring all circles as a node list
 which is similar to an array*/
 
 let currentActive = 1;
