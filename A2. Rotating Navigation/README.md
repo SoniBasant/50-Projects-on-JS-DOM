@@ -1,11 +1,76 @@
-# Rotating Navigation
+# 50 Projects in 50 Days
 
-This project shows how rotating navigation works. As the page load, we have navigation at bottom left of the screen in column form and the content is rotated at some degree. We also have the option to remove rotation to read content and also to bring back navigation at the same place that is on top left. Copyright of the picture belongs to me.
+## A2. Rotating Navigation
 
-### Important concepts for the project-
+This is the solution to the **Rotating Navigation** of this "50 Projects in 50 Days" series. In this series you can see different types of projects using different concepts of JavaScript, CSS and HTML.
 
-1. getElementById()
-2. querySelector()
-3. addEventListener('click')
-4. classList.add()
-5. classList.remove()
+## Table of contents
+
+- [Overview](#overview)
+  - [Snapshots](#snapshots)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+This project shows how rotating navigation works. As the page load, we have navigation at bottom left of the screen in column form and the content is rotated at some degree. We also have the option to remove rotation to read content and also to bring back navigation at the same place that is on top left.
+
+### Snapshots
+
+![Expanding Cards](Images/Rotate-Nav-Snap-1.png)
+![Expanding Cards](Images/Rotate-Nav-Snap-2.png)
+
+### Links
+
+- Solution URL: [Codes](https://github.com/SoniBasant/50-Projects-on-JS-DOM/tree/main/A2.%20Rotating%20Navigation)
+- Live Site URL: [Live link](https://sonibasant.github.io/50-Projects-on-JS-DOM/A2.%20Rotating%20Navigation/Rotate-Navi.html)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Vanilla JavaScript
+- Flexbox
+- Desktop-first workflow
+
+### What I learned
+
+- querySelector()
+- getElementById()
+- addEventListener() > click
+- classList.add()
+- classList.remove()
+
+### Continued development
+
+Your suggestions are welcome. 🙌
+
+### Useful resources
+
+- [Udemy](https://www.udemy.com/course/50-projects-50-days/) - Udemy course on DOM
+- [freecodecamp](https://www.freecodecamp.org/) - All the problems I solved. Helped me a lot. 🙌
+- [w3schools](https://www.w3schools.com) - This helped me throughout my journey. Still doing. 🙂
+
+## Author
+
+Basant Soni 👨‍💻
+
+- GitHub - [@SoniBasant](https://github.com/SoniBasant)
+- Frontend Mentor - [@SoniBasant](https://www.frontendmentor.io/profile/SoniBasant)
+- CodePen - [@SoniBasant](https://codepen.io/sonibasant)
+- Hashnode - [@SoniBasant](https://sonibasant.hashnode.dev/)
+
+## Acknowledgments
+
+Two people who made this 50 projects series -
+
+- [Brad Traversy](https://github.com/bradtraversy)
+- [Florin Pop](https://github.com/florinpop17)
