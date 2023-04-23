@@ -16,7 +16,7 @@ body {
 }
  
 .backG {
-    background: url(blurry_loading_5.jpg) no-repeat center center / contain;
+    background: url(Images/blurry_loading_bg.jpg) no-repeat center center / contain;
     position: absolute;
     top: -30px;
     left: -30px;
