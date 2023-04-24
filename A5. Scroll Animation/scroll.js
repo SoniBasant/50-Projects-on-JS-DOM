@@ -23,11 +23,11 @@
 
 // variables
 
-const boxes = document.querySelectorAll('.box');
+const boxes = document.querySelectorAll('.quote');
 
 window.addEventListener('scroll', checkBoxes);
 
-checkBoxes()
+checkBoxes();
 // to show first and second boxes at the screen
 // so, we call the function without even trigger point
 
@@ -39,7 +39,7 @@ function checkBoxes(){
     // we removed the other boxes(like 3rd box and below) from the screen
     // so we get empty screen at below, box will come to trigger at some heigth from the screen
     // and not from the bottom of the screen so that we can see it coming
-    const triggerBotton = window.innerHeight /5 *3;
+    const triggerBotton = window.innerHeight /5 *4.1;
     // loop through each boxes
     boxes.forEach(box => {
         // get the top position of the current box in loop
@@ -50,7 +50,7 @@ function checkBoxes(){
         if(boxTop < triggerBotton) {
             box.classList.add('show');
         } else {
-            box.classList.remove('show')
+            box.classList.remove('show');
         }
     });
 };
