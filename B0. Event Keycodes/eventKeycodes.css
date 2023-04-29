@@ -11,8 +11,9 @@
 * {
     box-sizing: border-box; /*if we add border or padding, it doesn't affect the width of it. */
 }
+
 body {
-    background-color: var(--body-backG-color);
+    /* background-color: var(--body-backG-color); */
     font-family: 'Muli', sans-serif;
     display: flex;
     flex-direction: column;
@@ -34,7 +35,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     flex-direction: column;
-    margin: 10px;
+    margin: 15px;
     padding: 20px;
     min-width: 150px;
     position: relative;
