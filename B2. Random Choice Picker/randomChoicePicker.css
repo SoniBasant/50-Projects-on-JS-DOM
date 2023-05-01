@@ -28,10 +28,11 @@ body {
     width: 500px;;
 }
 
-h3 {
+h1 {
     color: var(--content-color);
     margin: 10px 0px 20px;
     text-align: center;
+    font-size: 1.15rem;
 }
 
 textarea {
