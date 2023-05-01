@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> <!--includes meta data, link of stylesheet, title of the project-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Random Choice Picker</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="randomChoicePicker.css">
-        <script defer src="randomChoicePicker.js"></script> <!--JS link-->
-    </head>
-    <body>
-        <div class="container">
-            <h3>Enter all of the choices divided by a comma ( , )
-                <br>Press enter when you're done
-            </h3>
-            <textarea placeholder="Enter your choices here..." id="textarea" autofocus></textarea>
+<head> <!--includes meta data, link of stylesheet, title of the project-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Basant Soni">
+    <meta name="keywords" content="50 Projects in 50 Days, Udemy, Frontend, pure css, html, HTML5, Basant Soni, sonibasant, 
+    javascript, Vanilla javascript Projects, DOM, DOM manipulation, random choice picker, random input, 
+    how to choose between two or many things, pick one, it's my choice /">
+    <title>Random Choice Picker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="randomChoicePicker.css">
+    <script defer src="randomChoicePicker.js"></script> <!--JS link-->
+</head>
+<body>
+    <main class="container">
+        <h1>Enter all of the choices divided by a comma ( , )
+            <br>Press enter when you're done
+        </h1>
+        <textarea placeholder="Enter your choices here..." id="textarea" autofocus></textarea>
 
-            <div id="tags">
-                <span class="tag">Choice 1</span>
-                <span class="tag">Choice 2</span>
-                <span class="tag">Choice 3</span>
-            </div>
-        </div>
-     
-    </body>
+        <section id="tags">
+            <span class="tag">Choice 1</span>
+            <span class="tag">Choice 2</span>
+            <span class="tag">Choice 3</span>
+        </section>
+    </main>
+    
+</body>
 </html>
