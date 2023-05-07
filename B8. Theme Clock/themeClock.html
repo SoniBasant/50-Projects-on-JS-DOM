@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> <!--includes meta data, link of stylesheet, title of the project-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Theme Clock</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="themeClock.css">
-        <script defer src="themeClock.js"></script> <!--JS link-->
-    </head>
-    <body>
-        
-        <button class="toggle">Dark Mode</button>
+<head> <!--includes meta data, link of stylesheet, title of the project-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Basant Soni">
+    <meta name="keywords" content="50 Projects in 50 Days, Udemy, Frontend, pure css, html, HTML5, Basant Soni, sonibasant, 
+    javascript, Vanilla javascript Projects, DOM, DOM manipulation, clock, analog clock, digital clock, time date clock,
+    theme button, dark theme, light theme, javascript date function /">
+    <title>Theme Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="themeClock.css">
+    <script defer src="themeClock.js"></script> <!--JS link-->
+</head>
+<body>
+    
+    <button class="toggle">Dark Mode</button>
 
-        <div class="clock-container">
-            <div class="clock">
-                <div class="needle hour"></div>
-                <div class="needle minute"></div>
-                <div class="needle second"></div>
-                <div class="center-point"></div>
-            </div>
+    <main class="clock-container">
+        <section class="clock">
+            <div class="needle hour"></div>
+            <div class="needle minute"></div>
+            <div class="needle second"></div>
+            <div class="center-point"></div>
+        </section>
 
-            <!-- <div class="time">12:00</div>
-            <div class="date">Monday, Nov <span class="circle">2</span></div> -->
-            <!-- to style these in CSS -->
+        <!-- <div class="time">12:00</div>
+        <div class="date">Monday, Nov <span class="circle">2</span></div> -->
+        <!-- to style these in CSS -->
 
-            <div class="time"></div>
-            <div class="date"></div>
+        <section class="time"></section>
+        <section class="date"></section>
 
-        </div>
+    </main>
 
-    </body>
+</body>
 </html>
