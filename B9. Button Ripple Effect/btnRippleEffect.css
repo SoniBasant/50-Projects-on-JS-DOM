@@ -6,11 +6,11 @@
 }
 
 :root {
-    --button-color: purple;
+    --button-color: #1e90ff;
     --circle-color: #fff;
 }
 body {
-    background-color: black;
+    background-color: #2e4057;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
