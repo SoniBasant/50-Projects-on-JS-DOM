@@ -6,7 +6,7 @@
 }
 
 :root {
-    --body-color: steelblue;
+    --body-color: #d9eff7;
 }
 
 body {
@@ -15,21 +15,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden; /*don't want scroll bar to appear.*/
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
     margin: 0px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #9bbbfc;
+}
+
+h1 span {
+    color: #f9ce69;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .empty {
     height: 150px;
     width: 150px;
     margin: 10px;
-    border: 3px solid #1d1d1d;
+    border: 3px solid #013237;
     background-color: #f2f2f2;
 }
 
 .fill {
-    background-image: url('https://source.unsplash.com/random/150x150');
+    background-image: url('https://source.unsplash.com/random/150x150/?cat');
     height: 145px;
     width: 145px;
     cursor: pointer;
@@ -40,13 +56,13 @@ body {
 }
 
 .hovered {
-    background-color: #333;
+    background-color: #4741a6;
     border-color: white;
     border-style: dashed;
 }
 
 @media(max-width: 800px) {
-    body {
+    main {
         flex-direction: column;
     }
 }
