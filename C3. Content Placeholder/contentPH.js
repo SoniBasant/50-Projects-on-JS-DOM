@@ -9,6 +9,7 @@
 // 4. innerHTML
 // 5. forEach()
 // 6. classList.remove()
+// 7. arrow function
 
 
 // variables
@@ -30,7 +31,7 @@ setTimeout(getData, 2500);
 function getData() {
 
     // assign content at the place of placeholder
-    header.innerHTML = '<img src="ContentPH.jpg" alt="Header img"/>';
+    header.innerHTML = '<img src="Images/ContentPH.jpg" alt="Header img"/>';
     title.innerHTML = 'Lorem ipsum dolor sit amet';
     excerpt.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, neque!';
     profile_img.innerHTML = '<img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Person img">';
