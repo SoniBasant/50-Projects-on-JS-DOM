@@ -38,8 +38,9 @@ Page `after` loading :
 
 ### Built with
 
-- Semantic HTML5 markup
+- JavaScript
 
+- Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - Desktop-first workflow
