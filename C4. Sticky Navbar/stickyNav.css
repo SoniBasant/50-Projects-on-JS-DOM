@@ -74,7 +74,7 @@ body {
 
 /* hero image */
 .hero {
-    background-image: url('stickyNav.jpg');
+    background-image: url('Images/stickyNav.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
