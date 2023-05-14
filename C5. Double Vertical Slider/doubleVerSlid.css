@@ -9,8 +9,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    height: 100vh;
-    /* overflow: hidden; */
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .slider-container {
@@ -40,7 +40,7 @@ body {
     color: #f3f3f3;
 }
 
-.left-slide h1 {
+.left-slide h1, h2 {
     font-size: 40px;
     margin-bottom: 10px;
     margin-top: -30px;
@@ -54,7 +54,6 @@ body {
     left: 35%;
     width: 65%;
     transition: transform 0.5s ease-in-out;
-
 }
 
 .right-slide > div {
