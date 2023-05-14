@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> <!--includes meta data, link of stylesheet, title of the project-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Double Vertical Slider</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="doubleVerSlid.css">
-        <script defer src="doubleVerSlid.js"></script> <!--JS link-->
-    </head>
-    <body>
+<head> <!--includes meta data, link of stylesheet, title of the project-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Basant Soni">
+    <meta name="keywords" content="50 Projects in 50 Days, Udemy, Frontend, pure css, html, HTML5, Basant Soni, sonibasant, 
+    javascript, Vanilla javascript Projects, DOM, DOM manipulation, double vertical slider, up down movement pictures, arrow buttons, /">
+    <title>Double Vertical Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="doubleVerSlid.css">
+    <script defer src="doubleVerSlid.js"></script> <!--JS link-->
+</head>
+<body>
 
-        <div class="slider-container">
+    <main class="slider-container">
 
-            <!-- left side content -->
-            <div class="left-slide">
-                <!-- background colors 4,3,2,1 -->
-                
-                <div style="background-color: rgb(6, 16, 64);">
-                    <h1>Dawn at the jungle</h1>
-                    <p>Peace</p>
-                </div>
-
-                <div style="background-color: rgb(186, 44, 129);">
-                    <h1>The Taj Hotel</h1>
-                    <p>Bhopal</p>
-                </div>
-
-                <div style="background-color: rgb(82, 126, 20);">
-                    <h1>Sun rays and tree</h1>
-                    <p>Energetic</p>
-                </div>
-
-                <div style="background-color: rgb(255, 153, 0);">
-                    <h1>Blazing Flame</h1>
-                    <p>Within us</p>
-                </div>
+        <!-- left side content -->
+        <section class="left-slide">
+            <!-- background colors 4,3,2,1 -->
+            
+            <div style="background-color: rgb(6, 16, 64);">
+                <h1>Dawn at the jungle</h1>
+                <p>Peace</p>
             </div>
 
-            <!-- right side content -->
-            <div class="right-slide">
-
-                <!-- images 1,2,3,4 -->
-
-                <div style="background-image: url('img1.jpg')"></div>
-                
-                <div style="background-image: url('img2.jpg')"></div>
-
-                <div style="background-image: url('img3.jpg')"></div>
-
-                <div style="background-image: url('img4.jpg')"></div>
-
+            <div style="background-color: rgb(186, 44, 129);">
+                <h2>The Taj Hotel</h2>
+                <p>Bhopal</p>
             </div>
 
-            <!-- buttons -->
-            <div class="action-buttons">
-                
-                <button class="down-button">
-                    <i class="fas fa-arrow-down"></i>
-                </button>
-
-                <button class="up-button">
-                    <i class="fas fa-arrow-up"></i>
-                </button>
-
+            <div style="background-color: rgb(82, 126, 20);">
+                <h2>Sun rays and tree</h2>
+                <p>Energetic</p>
             </div>
 
-        </div>
-     
-    </body>
+            <div style="background-color: rgb(255, 153, 0);">
+                <h2>Blazing Flame</h2>
+                <p>Within us</p>
+            </div>
+        </section>
+
+        <!-- right side content -->
+        <section class="right-slide">
+
+            <!-- images 1,2,3,4 -->
+
+            <div style="background-image: url('Images/img1.jpg')"></div>
+            
+            <div style="background-image: url('Images/img2.jpg')"></div>
+
+            <div style="background-image: url('Images/img3.jpg')"></div>
+
+            <div style="background-image: url('Images/img4.jpg')"></div>
+
+        </section>
+
+        <!-- buttons -->
+        <section class="action-buttons">
+            
+            <button class="down-button">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+
+            <button class="up-button">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+        </section>
+
+    </main>
+    
+</body>
 </html>
