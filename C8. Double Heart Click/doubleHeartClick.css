@@ -51,7 +51,7 @@ span {
     height: 397px;
     width: 400px;
     max-width: 100%;
-    background: url(doubleHeartClick.jpg) no-repeat center center/contain;
+    background: url(Images/doubleHeartClick.jpg) no-repeat center center/contain;
     margin: auto;
     cursor: pointer;
     position: relative;
