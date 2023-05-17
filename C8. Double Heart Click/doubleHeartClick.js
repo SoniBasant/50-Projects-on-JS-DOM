@@ -21,6 +21,7 @@
 // 15. @keyframes
 // 16. transform, translate
 
+
 // variables
 
 const image = document.querySelector('.loveMe');
@@ -35,7 +36,7 @@ image.addEventListener('click', function(e) {
         clickTime = new Date().getTime();
     } else {
         // 400 can be reduced / increased
-        if((new Date(). getTime() - clickTime) < 400) {
+        if((new Date(). getTime() - clickTime) < 280) {
             createHeart(e);
             clickTime = 0;
         } else {
@@ -57,7 +58,7 @@ const createHeart = (e) => {
 
     let heartColor = "rgb(" + rColor + "," + yColor + "," + bColor + ")";
 
-    // add random style to heart
+    // add random color to heart
     heart.style.color = heartColor;
 
     // get x and y axis of an click event inside image
