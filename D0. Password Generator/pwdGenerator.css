@@ -25,9 +25,10 @@ body {
     margin: 0px;
 }
 
-h2 {
+h1 {
     margin: 10px 0px 20px;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .container {
