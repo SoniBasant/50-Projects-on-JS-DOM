@@ -10,9 +10,9 @@ html {
 }
 
 :root {
-    --primary-color: #d0d0d0;
-    --secondary-color: #8e44ad;
-    --third-color: #fff;
+    --primary-color: #e0e0e0;
+    --backG-color: #f5ddff;
+    --ball-color: #fff;
 }
 
 body {
@@ -24,6 +24,12 @@ body {
     height: 100vh;
     overflow: hidden; /*don't want scroll bar to appear.*/
     margin: 0px;
+    background-color: var(--backG-color);
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: darkmagenta;
 }
 
 .toggle-container {
@@ -48,14 +54,22 @@ body {
     margin: 0px 15px 0px;
 }
 
-.toggle:checked + .label {
-    background-color: var(--secondary-color);
+.toggle:checked + #label1 {
+    background-color: rgba(255, 119, 119, 0.9);
+}
+
+.toggle:checked + #label2 {
+    background-color: rgba(119, 253, 119, 0.9);
+}
+
+.toggle:checked + #label3 {
+    background-color: rgba(119, 119, 255, 0.9);
 }
 
 .ball {
     height: 34px;
     width: 34px;
-    background-color: var(--third-color);
+    background-color: var(--ball-color);
     border-radius: 50%;
     position: absolute;
     top: 3px;
@@ -63,6 +77,11 @@ body {
     align-items: center;
     justify-content: center;
     animation: slideOff 0.3s linear forwards;
+}
+
+span {
+    color: mediumorchid;
+    font-weight: bold;
 }
 
 .toggle:checked + .label .ball {
