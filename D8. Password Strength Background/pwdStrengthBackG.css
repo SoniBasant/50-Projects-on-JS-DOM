@@ -15,7 +15,7 @@ body {
 }
 
 .background {
-    background: url(pwdStrengthBackG.jpg) no-repeat center center/cover;
+    background: url(Images/pwdStrengthBackG.jpg) no-repeat center center/cover;
     position: absolute;
     top: -20px;
     bottom: -20px;
