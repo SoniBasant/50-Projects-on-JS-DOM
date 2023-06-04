@@ -80,6 +80,7 @@ Your suggestions are welcome. 🙌
 - [freecodecamp](https://www.freecodecamp.org/) - All the problems I solved. Helped me a lot. 🙌
 - [w3schools](https://www.w3schools.com) - This helped me throughout my journey. Still doing. 🙂
 - [Google API](https://fonts.googleapis.com/css2?family=Poppins&display=swap) - For font Poppins 🆎
+- [Giphy](https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif) - For Gif
 
 ## Author
 
