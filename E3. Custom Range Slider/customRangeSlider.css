@@ -17,9 +17,10 @@ body {
     margin: 0px;
 }
 
-h2 {
+h1 {
     position: absolute;
     top: 10px;
+    font-size: 1.4rem;
 }
 
 .range-container {
