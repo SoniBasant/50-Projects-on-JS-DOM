@@ -13,15 +13,16 @@
 
 // variables
 const container = document.querySelector('.container');
-const unsplashURL = 'https:\\source.unsplash.com/collection/1298463/';
-// const unsplashURL = 'https:\\source.unsplash.com/random/';
+const unsplashURL = 'https://source.unsplash.com/collection/1298463/';
+// const unsplashURL = 'https://source.unsplash.com/random/';
 const rows = 5;
 // and columns will be 3
 display();
 function display() {
     for(let i = 0; i < rows * 3; i++) {
         const img = document.createElement('img');
-        img.src = `${unsplashURL}${getRandomSize()}?food`;
+        img.src = `${unsplashURL}${getRandomSize()}`;
+        // img.src = `${unsplashURL}${getRandomSize()}?food`;
         container.appendChild(img);
     }
 }
