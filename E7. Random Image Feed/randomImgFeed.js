@@ -13,14 +13,15 @@
 
 // variables
 const container = document.querySelector('.container');
-const unsplashURL = 'https:\\source.unsplash.com/random/';
+const unsplashURL = 'https:\\source.unsplash.com/collection/1298463/';
+// const unsplashURL = 'https:\\source.unsplash.com/random/';
 const rows = 5;
 // and columns will be 3
 display();
 function display() {
     for(let i = 0; i < rows * 3; i++) {
         const img = document.createElement('img');
-        img.src = `${unsplashURL}${getRandomSize()}?space`;
+        img.src = `${unsplashURL}${getRandomSize()}?food`;
         container.appendChild(img);
     }
 }
@@ -30,9 +31,9 @@ function display() {
 // here we are getting random size b/w 300 and 310
 
 
-// random numbers b/w 300 and 310
+// random numbers b/w 200 and 300
 function getRandomNum() {
-    return Math.floor(Math.random() * 10) + 300;
+    return Math.floor(Math.random() * 100) + 200;
 }
 // console.log(getRandomSize());
 
