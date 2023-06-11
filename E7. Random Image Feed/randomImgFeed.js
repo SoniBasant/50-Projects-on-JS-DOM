@@ -7,22 +7,24 @@
 // 2. unsplash website 
 // 3. for() loop
 // 4. createElement()
-// 5. template literals
+// 5. Template literals
 // 6. appendChild()
 // 7. Math.random() and Math.floor()
 
 // variables
 const container = document.querySelector('.container');
 const unsplashURL = 'https:\\source.unsplash.com/random/';
-const rows = 10;
-
+const rows = 5;
 // and columns will be 3
-
-for(let i = 0; i < rows * 3; i++) {
-    const img = document.createElement('img');
-    img.src = `${unsplashURL}${getRandomSize()}`;
-    container.appendChild(img);
+display();
+function display() {
+    for(let i = 0; i < rows * 3; i++) {
+        const img = document.createElement('img');
+        img.src = `${unsplashURL}${getRandomSize()}?space`;
+        container.appendChild(img);
+    }
 }
+
 
 // each random size will give different image
 // here we are getting random size b/w 300 and 310
