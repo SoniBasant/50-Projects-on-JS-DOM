@@ -23,11 +23,11 @@ Unsplash website gives us random images. At different height and width, we can g
 
 ### Snapshots
 
-`Images are random, can be repetitive.`
+`Images are random. So their place on the page.`
 
 **Random Images of Space**
 
-![Random Image Feed](Images/Random-snap-1.png)
+![Random Image Feed](Images/Random-snap-2.png)
 
 ### Links
 
@@ -55,7 +55,7 @@ Unsplash website gives us random images. At different height and width, we can g
 - createElement()
 - Template literals
 - appendChild()
-- Math.random() and Math.floor()
+- Math.random() and Math.sort()
 
 ### Continued development
 
