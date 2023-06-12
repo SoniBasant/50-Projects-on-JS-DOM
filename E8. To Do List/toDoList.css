@@ -15,6 +15,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 h1 {
