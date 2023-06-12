@@ -19,13 +19,11 @@ This is the solution to the **Random Image Feed** of this "50 Projects in 50 Day
 
 ## Overview
 
-Unsplash website gives us random images. At different height and width, we can get different images. Using JavaScript, we randomly change size, get new images and make a beautiful collage.
+Unsplash website gives us many types of images. In this project, there are two parameters. One is type of image and another is place of the image. Using javascript we can get different images at different places.
 
 ### Snapshots
 
-`Images are random. So their place on the page.`
-
-**Random Images of Space**
+**Random Images**
 
 ![Random Image Feed](Images/Random-snap-2.png)
 
@@ -50,18 +48,12 @@ Unsplash website gives us random images. At different height and width, we can g
 
 - querySelector()
 
-- unsplash website
 - for() loop
 - createElement()
-- Template literals
 - appendChild()
 - Math.random() and Math.sort()
 
 ### Continued development
-
-User should be able to enter the type of images user wants.
-
-Changeable size so that user can get different sizes.
 
 Need to work on design and background.
 
@@ -74,7 +66,7 @@ Your suggestions are welcome. 🙌
 - [freecodecamp](https://www.freecodecamp.org/) - All the problems I solved. Helped me a lot. 🙌
 - [w3schools](https://www.w3schools.com) - This helped me throughout my journey. Still doing. 🙂
 - [Google API](https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap) - For font Roboto 🆎
-- [Random User API](https://randomuser.me/api/portraits/women/68.jpg) - For Random Images 👨‍🔬
+- [Unsplash](https://source.unsplash.com/random/) - For Random Images 👨‍🔬
 
 ## Author
 
