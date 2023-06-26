@@ -19,7 +19,7 @@ This is the solution to the **Feedback UI Design** of this "50 Projects in 50 Da
 
 ## Overview
 
-Many times you was asked to give feedback. This project is about the same, giving feedback. You are presented with three options with respective emojis.
+Many times you were asked to give feedback. This project is about the same, giving feedback. You are presented with three options with respective emojis.
 
 Unhappy 😔 | Neutral 😐 | Satisfied 😍
 
